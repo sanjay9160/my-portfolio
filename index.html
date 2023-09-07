@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PORTFOLIO</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./style.css">
+
+<body>
+    <div class="container-fluid flex">
+
+        <!--menu-bar-->
+        <div id="menu" onclick="onClickMenu()">
+            <div class="bar" id="bar-1"></div>
+            <div class="bar" id="bar-2"></div>
+            <div class="bar" id="bar-3"></div>
+        </div>
+
+        <!--sidebar-->
+        <div class="sidebar flex" id="sidebar">
+            <div class="my-image">
+                <img src="./img/sanjay.png.jpg" alt="" width="100%">
+                <h2>sanjay singh</h2>
+                <h3>front end web developer</h3>
+            </div>
+            <nav>
+                <ul class="flex">
+                    <li><a href="#home" class="flex" onclick="onClickMenu()">HOME</a></li>
+                    <li><a href="#about" class="flex" onclick="onClickMenu()">ABOUT</a></li>
+                    <li><a href="#services" class="flex" onclick="onClickMenu()">SERVICES</a></li>
+                    <li><a href="#projects" class="flex" onclick="onClickMenu()">PROJECTS</a></li>
+                    <li><a href="#contact" class="flex" onclick="onClickMenu()">CONTACT</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!--container-->
+        <div class="container">
+
+            <!--intro-section-->
+            <div class="intro-section" id="home">
+                <h3>HI THERE !</h3>
+                <h1>I'M <span class="">sanjay singh</span></h1>
+                <h1>I'M a <span>front end web developer</span></h1>
+                <button class="btn">about me <span class="fa fa-user"></span></button>
+            </div>
+
+            <!--about-section-->
+            <section class="about-section" id="about">
+                <h2><span class="highlight">About</span> Me</h2>
+                <hr>
+                <h3>HELLO !</h3>
+                <p>My name is <span class="highlight">Sanjay Singh</span>. I'm a passionate <span class="highlight">Frontend Web Developer</span>, possessing keen interest in progressive technologies. I have strong knowledge of web development technologies
+                    including (HTML5, CSS3, Javascript and Bootstrap etc). I like to maintain understanding of current technologies.</p>
+                <p>I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
+                <button class="btn cv-btn">Download C.V</button>
+            </section>
+
+            <!--my-skills-->
+            <section class="my-skills" id="services">
+                <h2>My <span class="highlight">Skills</span></h2>
+                <hr>
+                <div class="skills flex">
+                    <div class="skill skill-1">
+                        <img src="./img/html_65686_badge_icon.png" alt="" width="70%">
+                    </div>
+                    <div class="skill skill-2">
+                        <img src="./img/SeekPng.com_css3-logo-png_1415372.png" alt="" width="63%">
+                    </div>
+                    <div class="skill skill-3">
+                        <img src="./img/SeekPng.com_javascript-logo-png_803501.png" alt="" width="70%">
+                    </div>
+                    <div class="skill skill-4">
+                        <img src="./img/bootstrap-seeklogo.com.svg" alt="" width="70%">
+                    </div>
+                    <div class="skill skill-5">
+                        <img src="./img/sass-seeklogo.com.svg" alt="" width="70%">
+                    </div>
+                    <div class="skill skill-6">
+                        <img src="./img/jquery-seeklogo.com.svg" alt="" width="70%">
+                    </div>
+                    <div class="skill github flex">
+                        <img src="./img/github-seeklogo.com.svg" alt="" width="20%">
+                        <div class="text">
+                            <h3>See my <span class="highlight">GITHUB</span></h3>
+                            <p>Have a glance on my Github to see my experience in coding.</p>
+                            <button class="btn github-btn">GITHUB</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--my-projects-->
+            <main class="my-projects" id="projects">
+                <h2>My <span class="highlight">Projects</span></h2>
+                <hr>
+
+                <div class="projects flex">
+                    <div class="project project-1">
+                        <img src="./img/Capture-1.PNG" width="100%">
+                        <div class="description ">
+                            <h4>GYM WEBSITE</h4>
+                            <ul>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;HTML CSS BOOTSTRAP</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Bootstrap grid</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Hamberger menu</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Customised Owl carousel</li>
+                            </ul>
+                            <button class="btn live-view-btn ">LIVE VIEW</button>
+                        </div>
+                    </div>
+                    <div class="project project-2 ">
+                        <img src="./img/Capture-2.PNG" alt=" " width="100% ">
+                        <div class="description ">
+                            <h4>GYM WEBSITE</h4>
+                            <ul>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;HTML CSS BOOTSTRAP</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Bootstrap grid</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Hamberger menu</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Customised Owl carousel</li>
+                            </ul>
+                            <button class="btn live-view-btn ">LIVE VIEW</button>
+                        </div>
+                    </div>
+                    <div class="project project-3 ">
+                        <img src="./img/Capture-3.PNG" alt=" " width="100% ">
+                        <div class="description ">
+                            <h4>GYM WEBSITE</h4>
+                            <ul>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;HTML CSS BOOTSTRAP</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Bootstrap grid</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Hamberger menu</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Customised Owl carousel</li>
+                            </ul>
+                            <button class="btn live-view-btn ">LIVE VIEW</button>
+                        </div>
+                    </div>
+                    <div class="project project-4 ">
+                        <img src="./img/Capture-4.PNG" alt=" " width="100% ">
+                        <div class="description ">
+                            <h4>GYM WEBSITE</h4>
+                            <ul>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;HTML CSS BOOTSTRAP</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Bootstrap grid</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Hamberger menu</li>
+                                <li><span class="fa fa-long-arrow-right "></span>&nbsp; &nbsp;Customised Owl carousel</li>
+                            </ul>
+                            <button class="btn live-view-btn ">LIVE VIEW</button>
+                        </div>
+                    </div>
+                </div>
+            </main>
+
+            <!--contact-me-->
+            <div class="contact-me " id="contact ">
+                <h2><span class="highlight ">Contact</span> Me</h2>
+                <hr>
+
+                <div class="contact-info ">
+                    <h3>Contact Info</h3>
+                    <div class="contact-option flex ">
+                        <i class="fa fa-phone "></i>
+                        <span>+91 7497030210</span>
+                    </div>
+                    <div class="contact-option flex ">
+                        <i class="fa fa-envelope-o "></i>
+                        <span>sanjayst0619@gmail.com</span>
+                    </div>
+                    <div class="contact-option flex ">
+                        <i class="fa fa-map-marker "></i>
+                        <span>Haryana, India</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--footer-->
+            <footer>
+                <p><span class="highlight ">Thank You</span> for giving a visit.</p>
+                <p>Feel free to contact me anytime</p>
+                <i class="fa fa-github "></i>
+                <i class="fa fa-linkedin "></i>
+                <p class="notice ">[ Available for interview ASAP Virtual & Phone - Anytime. In-person - 24 hours notice. ]</p>
+            </footer>
+
+            <!--scroll-top-->
+            <div class="scroll-top ">
+                <a href="# "><img src="./img/scroll-top-img.png " alt=" " width="100% "></a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js "></script>
+</body>
+
+</html>

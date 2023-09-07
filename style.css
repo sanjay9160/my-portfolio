@@ -1,0 +1,503 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #000;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-weight: 400;
+    color: #fff;
+    scroll-behavior: smooth;
+}
+
+html {
+    height: 100%;
+    font-size: 15px;
+}
+
+
+/*flex*/
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/*container-fluid*/
+
+.container-fluid {
+    align-items: normal;
+    justify-content: space-between;
+}
+
+
+/*highlight*/
+
+.highlight {
+    text-decoration: underline;
+    color: yellow;
+}
+
+
+/*menu-bar*/
+
+#menu {
+    display: none;
+}
+
+
+/*sidebar*/
+
+.sidebar {
+    width: 30%;
+    height: 100%;
+    background-color: #1a1a1a;
+    text-align: center;
+    position: fixed;
+    padding: 0.5rem 0;
+}
+
+.sidebar .my-image img {
+    width: 40%;
+    border-radius: 100%;
+    border: 2px solid yellow;
+}
+
+.sidebar .my-image h2 {
+    text-transform: capitalize;
+    font-size: 2vw;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.sidebar .my-image h3 {
+    text-transform: capitalize;
+    font-size: 1.4vw;
+    margin-top: 0.8rem;
+    margin-bottom: 0;
+}
+
+.sidebar nav {
+    width: 100%;
+}
+
+.sidebar nav ul {
+    margin-top: 0;
+    padding-left: 0;
+}
+
+.sidebar nav ul li {
+    list-style: none;
+    margin-top: 1.2rem;
+    width: 20vw;
+    height: 8vh;
+    background-color: #000;
+    border-radius: 50px;
+    font-size: 1.2vw;
+}
+
+.sidebar nav ul li a {
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.sidebar nav ul li a:hover {
+    cursor: pointer;
+    background-color: yellow;
+    color: #000;
+}
+
+
+/*container*/
+
+.container {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    padding-left: 10rem;
+    padding-right: 2rem;
+}
+
+
+/*intro-section*/
+
+.intro-section {
+    width: 100%;
+    padding: 10rem 0;
+}
+
+.intro-section h3 {
+    font-size: 1.6vw;
+}
+
+.intro-section h1 {
+    font-size: 3vw;
+}
+
+.intro-section span {
+    text-transform: capitalize;
+    color: yellow;
+    font-size: 4.5vw;
+}
+
+.btn {
+    width: 7vw;
+    height: 2vw;
+    font-size: 1vw;
+    text-transform: capitalize;
+    background-color: #333;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: all .4s ease-in-out;
+}
+
+.intro-section .fa-user {
+    font-size: 1vw;
+    color: #fff;
+    padding-left: 0.2vw;
+}
+
+.btn:hover {
+    color: #000;
+    background-color: yellow;
+    border: none;
+}
+
+
+/*about-section*/
+
+.about-section,
+.my-skills,
+.my-projects,
+.contact-me {
+    padding: 10rem 0;
+    line-height: 2.4vw;
+}
+
+.about-section h2,
+.my-skills h2,
+.my-projects h2,
+.contact-me h2 {
+    font-size: 2.5vw;
+    text-align: center;
+    margin-bottom: 2vw;
+}
+
+.about-section hr,
+.my-skills hr,
+.my-projects hr,
+.contact-me hr {
+    margin-bottom: 2vw;
+    border: 1px solid #333;
+}
+
+.about-section h3 {
+    font-size: 1.8vw;
+    margin: 2vw 0;
+}
+
+.about-section p {
+    font-size: 1.3vw;
+}
+
+.cv-btn {
+    width: 8vw;
+    height: 2.4vw;
+    background: none;
+    border: 2px solid #1a1a1a;
+}
+
+
+/*my-skills*/
+
+.my-skills .skills {
+    justify-content: space-between;
+}
+
+.my-skills .skills .skill {
+    width: 30%;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.my-skills .skills .github {
+    width: 100%;
+    justify-content: flex-start;
+    margin-left: 2vw;
+}
+
+.my-skills .skills .github .text {
+    padding-left: 4vw;
+    line-height: 2.8vw;
+    font-size: 1.2vw;
+    text-align: left;
+}
+
+.github-btn {
+    width: 10vw;
+    height: 3vw;
+    background: none;
+    border: none;
+    border-radius: 0%;
+    border-left: 2px solid #1a1a1a;
+    border-bottom: 2px solid #1a1a1a;
+}
+
+
+/*my-projects*/
+
+.my-projects .projects {
+    justify-content: space-between;
+}
+
+.my-projects .projects .project {
+    width: 47%;
+    margin-top: 2vw;
+    position: relative;
+    overflow: hidden;
+}
+
+.my-projects .projects .project img {
+    height: 60vh;
+    transition: all .4s ease-in-out;
+    background: linear-gradient(to right top, rgba(0, 0, 0, 1));
+}
+
+.my-projects .projects .project img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.my-projects .projects .project .description {
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    background-color: #1a1a1a;
+    line-height: 1.5vw;
+    padding: 1vw 2vw;
+}
+
+.my-projects .projects .project .description h4 {
+    font-size: 1.1vw;
+    padding-bottom: 0.4vw;
+    color: yellow;
+}
+
+.my-projects .projects .project .description ul li {
+    font-size: 0.9vw;
+    list-style: none;
+}
+
+.live-view-btn {
+    width: 5vw;
+    height: 2vw;
+    font-size: 0.9vw;
+    border-radius: 0%;
+    margin-top: 1vw;
+}
+
+
+/*contact-me*/
+
+.contact-me .contact-info {
+    margin-top: 2vw;
+}
+
+.contact-me .contact-info h3 {
+    font-size: 2.2vw;
+    margin-bottom: 2vw;
+}
+
+.contact-me .contact-info .contact-option {
+    justify-content: flex-start;
+    margin-bottom: 1vw;
+}
+
+.contact-me .contact-info span {
+    font-size: 1.4vw;
+}
+
+.contact-me .contact-info i {
+    color: yellow;
+    font-size: 1.4vw;
+    width: 2vw;
+    text-align: center;
+    margin-right: 1vw;
+}
+
+
+/*footer*/
+
+footer {
+    padding-bottom: 2rem;
+    line-height: 3.4vw;
+    font-size: 1.4vw;
+    text-align: center;
+}
+
+footer span {
+    font-size: 2.4vw;
+    margin-right: 0.5vw;
+}
+
+footer i {
+    margin: 0 0.4vw;
+}
+
+footer .notice {
+    color: gray;
+}
+
+
+/*scroll-top*/
+
+.scroll-top {
+    position: fixed;
+    bottom: 2vw;
+    right: 2vw;
+}
+
+
+/*media-query*/
+
+@media (max-width:1000px) {
+    .my-projects .projects .project .description {
+        padding: 0.4vw 2vw;
+    }
+    .live-view-btn {
+        margin-top: 0.5vw;
+    }
+}
+
+@media (max-width:768px) {
+    /*menu-bar*/
+    #menu {
+        width: 4vw;
+        height: 0.7vw;
+        display: block;
+        position: fixed;
+        right: 2rem;
+        top: 2rem;
+        z-index: 2;
+    }
+    #menu .bar {
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        transition: all .3s ease-in-out;
+    }
+    #bar-1 {
+        transform: translateY(-0.7vw);
+    }
+    #bar-3 {
+        transform: translateY(0.7vw);
+    }
+    /*sidebar*/
+    .sidebar {
+        width: 100%;
+        z-index: 1;
+        display: none;
+        padding-top: 3rem;
+    }
+    .sidebar .my-image img {
+        width: 15vw;
+    }
+    .sidebar .my-image h3 {
+        margin-top: 0.5rem;
+    }
+    .sidebar nav {
+        width: 30vw;
+        margin: 0 auto;
+    }
+    .sidebar nav ul li {
+        width: 30vw;
+        margin-top: 0.9rem;
+    }
+    .icon #bar-1 {
+        transform: translateY(0.9vw) rotate(45deg);
+    }
+    .icon #bar-3 {
+        transform: translateY(-0.5vw) rotate(-45deg);
+    }
+    .icon #bar-2 {
+        opacity: 0;
+    }
+    .change {
+        display: block;
+        transition: all 10s linear;
+    }
+    /*container*/
+    .container {
+        width: 100%;
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    /*my-skills*/
+    .my-skills .skills,
+    .my-projects .projects {
+        justify-content: center;
+    }
+    .my-skills .skills .skill {
+        width: 70%;
+        margin-top: 10vw;
+    }
+    .my-skills .skills .github {
+        justify-content: center;
+    }
+    .my-skills .skills .github img {
+        width: 50%;
+    }
+    .my-skills .skills .github .text {
+        width: 70%;
+        margin-top: 5vw;
+    }
+    /*my-projects*/
+    .my-projects .projects .project {
+        width: 70%;
+        margin-top: 10vw;
+    }
+    .my-projects .projects .project .description {
+        line-height: 2vw;
+        padding: 6vw 6vw;
+    }
+    .live-view-btn {
+        margin-top: 1vw;
+    }
+}
+
+@media (max-width:450px) {
+    .my-projects .projects .project .description {
+        padding: 4vw 6vw;
+    }
+}
+
+@media (max-width:320px) {
+    .my-projects .projects .project .description {
+        padding: 3vw 6vw;
+    }
+}
+
+@media (max-width:280px) {
+    .my-projects .projects .project .description {
+        padding: 1.5vw 4vw;
+    }
+    .live-view-btn {
+        margin-top: 0vw;
+    }
+}
