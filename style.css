@@ -170,10 +170,12 @@ html {
 .intro-section .fa-user {
     font-size: 1rem;
     color: #fff;
-    padding-left: 0.2vw;
+    margin-left: 0.2vw;
+    transition: all .4s ease-in-out;
 }
 
-.btn:hover {
+.btn:hover,
+.btn:hover .fa-user {
     color: #000;
     background-color: yellow;
     border: none;
@@ -316,11 +318,16 @@ html {
     list-style: none;
 }
 
+a {
+    text-decoration: none;
+}
+
 .live-view-btn {
     width: 75px;
     font-size: 0.9rem;
     border-radius: 0%;
     margin-top: 0.5rem;
+    transition: all .4s ease-in-out;
 }
 
 
@@ -430,6 +437,7 @@ footer .notice {
         right: 2rem;
         top: 2rem;
         z-index: 2;
+        cursor: pointer;
     }
     #menu .bar {
         width: 100%;
@@ -545,6 +553,12 @@ footer .notice {
     .my-projects .projects .project .description ul li {
         font-size: 0.7rem;
     }
+    .my-projects .projects .project {
+        width: 70%;
+    }
+    .my-projects .projects .project img {
+        height: 60vw;
+    }
     .live-view-btn {
         width: 50px;
         height: 15px;
@@ -553,21 +567,16 @@ footer .notice {
 }
 
 @media (max-width:360px) {
-    html {
-        font-size: 6px;
-    }
-    .btn {
-        width: 70px;
-        height: 20px;
-    }
-    .live-view-btn {
-        width: 30px;
-        height: 12px;
-    }
     .sidebar .my-image img {
         width: 30%;
     }
     .sidebar nav {
         width: 45%;
+    }
+}
+
+@media (max-width:316px) {
+    html {
+        font-size: 8px;
     }
 }
