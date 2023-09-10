@@ -21,6 +21,10 @@ html {
     font-size: 15px;
 }
 
+a {
+    text-decoration: none;
+}
+
 
 /*flex*/
 
@@ -318,9 +322,8 @@ html {
     list-style: none;
 }
 
-a {
+.my-projects .projects .project .description a {
     width: 75px;
-    text-decoration: none;
 }
 
 .live-view-btn {
@@ -539,8 +542,11 @@ footer .notice {
     .sidebar nav ul li {
         margin-top: 1rem;
     }
-    .live-view-btn,
-    a {
+    .live-view-btn {
+        width: 50px;
+        height: 20px;
+    }
+    .my-projects .projects .project .description a {
         width: 50px;
         height: 20px;
     }
@@ -565,11 +571,14 @@ footer .notice {
     .my-projects .projects .project img {
         height: 60vw;
     }
-    .live-view-btn,
-    a {
+    .live-view-btn {
         width: 50px;
         height: 15px;
         font-size: 0.7rem;
+    }
+    .my-projects .projects .project .description a {
+        width: 50px;
+        height: 15px;
     }
 }
 
