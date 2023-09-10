@@ -138,7 +138,6 @@ html {
 .intro-section {
     width: 100%;
     padding: 10rem 0;
-    margin-top: 5rem;
 }
 
 .intro-section h3 {
@@ -491,6 +490,10 @@ footer .notice {
         width: 100%;
         padding-left: 4rem;
         padding-right: 4rem;
+    }
+    /*intro-section*/
+    .intro-section {
+        margin-top: 5rem;
     }
     /*my-skills*/
     .my-skills .skills,
