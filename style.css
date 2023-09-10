@@ -138,6 +138,7 @@ html {
 .intro-section {
     width: 100%;
     padding: 10rem 0;
+    margin-top: 5rem;
 }
 
 .intro-section h3 {
@@ -577,6 +578,15 @@ footer .notice {
 
 @media (max-width:316px) {
     html {
-        font-size: 8px;
+        font-size: 7px;
+    }
+    .my-projects .projects .project {
+        width: 80%;
+    }
+    .my-projects .projects .project img {
+        height: 65vw;
+    }
+    .my-projects .projects .project .description {
+        padding-left: 1rem;
     }
 }
