@@ -319,6 +319,7 @@ html {
 }
 
 a {
+    width: 75px;
     text-decoration: none;
 }
 
@@ -538,7 +539,8 @@ footer .notice {
     .sidebar nav ul li {
         margin-top: 1rem;
     }
-    .live-view-btn {
+    .live-view-btn,
+    a {
         width: 50px;
         height: 20px;
     }
@@ -563,7 +565,8 @@ footer .notice {
     .my-projects .projects .project img {
         height: 60vw;
     }
-    .live-view-btn {
+    .live-view-btn,
+    a {
         width: 50px;
         height: 15px;
         font-size: 0.7rem;
