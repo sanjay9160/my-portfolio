@@ -8,6 +8,7 @@
     <title>MY PORTFOLIO</title>
 </head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./style.css">
 
 <body>
@@ -21,7 +22,7 @@
         </div>
 
         <!--sidebar-->
-        <div class="sidebar flex" id="sidebar">
+        <div class="sidebar flex" id="sidebar" data-aos="fade-right">
             <div class="my-image">
                 <img src="./img/sanjay.png.jpg" alt="" width="100%">
                 <h2>sanjay singh</h2>
@@ -42,7 +43,7 @@
         <div class="container">
 
             <!--intro-section-->
-            <div class="intro-section" id="home">
+            <div class="intro-section" id="home" data-aos="fade-down">
                 <h3>HI THERE !</h3>
                 <h1>I'M <span class="">sanjay singh</span></h1>
                 <h1>I'M a <span>front end web developer</span></h1>
@@ -50,18 +51,18 @@
             </div>
 
             <!--about-section-->
-            <section class="about-section" id="about">
+            <section class="about-section" id="about" data-aos="zoom-in">
                 <h2><span class="highlight">About</span> Me</h2>
                 <hr>
                 <h3>HELLO !</h3>
                 <p>My name is <span class="highlight">Sanjay Singh</span>. I'm a passionate <span class="highlight">Frontend Web Developer</span>, possessing keen interest in progressive technologies. I have strong knowledge of web development technologies
                     including (HTML5, CSS3, Javascript and Bootstrap etc). I like to maintain understanding of current technologies.</p>
                 <p>I will love to hear from you. Whether it's a project, job opportunity, or just a chat. Feel free to contact me.</p>
-                <button class="btn cv-btn">Download C.V</button>
+                <a href="./img/Resume.pdf" target="_blank"><button class="btn cv-btn">Download C.V</button></a>
             </section>
 
             <!--my-skills-->
-            <section class="my-skills" id="services">
+            <section class="my-skills" id="services" data-aos="zoom-in">
                 <h2>My <span class="highlight">Skills</span></h2>
                 <hr>
                 <div class="skills flex">
@@ -95,7 +96,7 @@
             </section>
 
             <!--my-projects-->
-            <main class="my-projects " id="projects">
+            <main class="my-projects " id="projects" data-aos="zoom-in">
                 <h2>My <span class="highlight ">Projects</span></h2>
                 <hr>
 
@@ -156,7 +157,7 @@
             </main>
 
             <!--contact-me-->
-            <div class="contact-me" id="contact">
+            <div class="contact-me" id="contact" data-aos="zoom-in">
                 <h2><span class="highlight ">Contact</span> Me</h2>
                 <hr>
 
@@ -201,6 +202,8 @@
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <script src="./script.js "></script>
 </body>
