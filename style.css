@@ -72,7 +72,7 @@ a {
 }
 
 .sidebar .my-image img {
-    width: 80%;
+    width: 100%;
     height: 12vw;
     border-radius: 100%;
     object-fit: cover;
